@@ -86,11 +86,11 @@ if video.isOpened():
 
         key = cv.waitKeyEx(wait_msec)
         
-        if key == 27: # ESC: 종료
+        if key == 27:
             break
-        elif key == ord(' '): # Space: 녹화 토글
+        elif key == ord(' '):
             is_recording = not is_recording
-        elif key == ord('p') or key == ord('P'): # f: 좌우 반전 필터 토글 (추가 기능)
+        elif key == ord('p') or key == ord('P'): 
             is_paused = not is_paused
         elif key == ord('n') or key == ord('N'):
             negative = not negative
@@ -114,7 +114,6 @@ if video.isOpened():
             
 
             
-    # 6. 자원 해제
     video.release()
     out.release()
     cv.destroyAllWindows()
