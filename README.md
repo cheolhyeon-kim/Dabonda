@@ -32,6 +32,7 @@ Dabonda Recorder is an OpenCV-based real-time CCTV monitoring system featuring v
 | :--- | :---: | :--- |
 | **녹화 토글** | `Space` | 현재 채널의 영상을 실시간으로 기록 및 저장 (`AVI` 형식) |
 | **채널 전환** | `←`, `→` | 001~050번 사이의 RTSP 네트워크 스트림 채널을 실시간 순환 |
+| **색상 반전**|	전체 영상의 색상을 반전 |
 | **일시정지** | `P` | 라이브 피드를 정지하여 정지 화면 분석 지원 (백그라운드 녹화 유지) |
 | **영역 확대** | `마우스 좌클릭` | 클릭 상태를 유지하면 해당 좌표를 5배율로 실시간 확대  |
 | **종료** | `ESC` | 모든 스트림 연결을 해제하고 프로그램을 안전하게 종료 |
@@ -45,6 +46,24 @@ Dabonda Recorder is an OpenCV-based real-time CCTV monitoring system featuring v
 
 ## Screenshots
 
+<img width="796" height="637" alt="스크린샷 2026-03-17 073737" src="https://github.com/user-attachments/assets/e3f1f7ce-d6cc-4021-b62d-e4b276f7ad34" />
+<녹화 진행중>
+
+
+<img width="791" height="637" alt="스크린샷 2026-03-17 074421" src="https://github.com/user-attachments/assets/30fc805a-2c2e-4230-b15a-9966f90257e4" />
+<채널 변경 후(왼쪽 방향키 이용)>
+
+
+<img width="894" height="635" alt="스크린샷 2026-03-17 073851" src="https://github.com/user-attachments/assets/60e5859c-6204-4c4a-a236-4fb4fcf4b97a" />
+<화면정지>
+
+
+<img width="901" height="635" alt="스크린샷 2026-03-17 073905" src="https://github.com/user-attachments/assets/108cd764-86e5-40f5-b609-5e2c2ca759ac" />
+<반전 적용>
+
+
+<img width="901" height="633" alt="스크린샷 2026-03-17 073939" src="https://github.com/user-attachments/assets/25004779-62c0-4ec5-9b64-847fa27b8cee" />
+<영역 확대>
 
 
 ## 실행
