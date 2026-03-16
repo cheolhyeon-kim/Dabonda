@@ -9,7 +9,7 @@ zoom_box_radius = 30
 zoom_box_margin = 10
 mouse_xy = [-1,-1,False]
 
-win = "dabonda (Space: Rec, ESC: Exit)"
+win = "Dabonda"
 
 def get_video_capture(n):
     url = f'rtsp://210.99.70.120:1935/live/cctv{n:03d}.stream'
