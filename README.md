@@ -3,7 +3,7 @@ Dabonda Recorder is an OpenCV-based real-time CCTV monitoring system featuring v
 
 ## 주요 기능 
 1. 실시간 RTSP 스트리밍: 001번부터 050번까지의 CCTV 채널을 실시간으로 연결합니다.
-2. 영상 녹화: 실시간 화면을 AVI 파일로 저장할 수 있습니다.
+2. 영상 녹화: 실시간 화면을 DIVX코덱을 이용하여 .avi파일로 저장한다
 3. 채널 전환: 방향키를 이용해 간편하게 채널을 넘겨볼 수 있습니다. 
 4. Click-to-Zoom: 마우스 왼쪽 버튼을 누르고 있는 동안 해당 지점을 확대해서 볼 수 있습니다. 
 5. 화면 효과 및 제어:
@@ -36,7 +36,12 @@ Dabonda Recorder is an OpenCV-based real-time CCTV monitoring system featuring v
 | **영역 확대** | `마우스 좌클릭` | 클릭 상태를 유지하면 해당 좌표를 5배율로 실시간 확대  |
 | **종료** | `ESC` | 모든 스트림 연결을 해제하고 프로그램을 안전하게 종료 |
 
-## 
+## 🎥 영상 저장 
+     압축 코덱 : DIVX  사용
+     파일 형식 : .avi 형식으로 저장
+     프레임 속도 (FPS): 소스 영상의 속도에 맞춰 30.0 FPS로 고정하여 실제 시간과 동기화된 영상을 기록
+     저장 기법: cv.VideoWriter 객체를 통해 실시간으로 처리된 데이터를 프레임 단위로 인코딩하여 파일 시스템에 기록
+     녹화 모니터링: 녹화가 진행되는 동안 원본 프레임에 영향을 주지 않는 별도의 레이어를 사용하여 화면에 빨간색 원과 REC 문구를 표시
 
 ## Screenshots
 
