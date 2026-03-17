@@ -74,7 +74,7 @@ Dabonda Recorder is an OpenCV-based real-time CCTV monitoring system featuring v
 ## 실행
 
 ```bash
-pip install opencv-python
+pip install opencv-python opencv-contrib-python
 python Dabonda.py
 ```
 
